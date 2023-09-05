@@ -42,8 +42,7 @@ export const connectWithContract = async (contractAddress, contractAbi) => {
   const privateKey =
     ethers.Wallet.fromMnemonic(mnemonic)._signingKey().privateKey;
   const provider = new ethers.providers.JsonRpcProvider(
-    // "https://avalanche-fuji.infura.io/v3/4c063e7cdc7c4d6788000384a7851888"
-    "https://arbitrum-goerli.infura.io/v3/4c063e7cdc7c4d6788000384a7851888"
+    "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
   );
 
   const wallet = new ethers.Wallet(privateKey, provider);
