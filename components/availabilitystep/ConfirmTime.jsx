@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { ChevronLeftIcon } from "react-native-heroicons/solid";
 import { CalendarIcon, ClockIcon } from "react-native-heroicons/outline";
 import { router } from "expo-router";
-import { Input } from "react-native-elements";
 import { TextInput } from "react-native";
 import { createMeeting } from "../../utils/create-room";
 import { scheduleASession } from "../../hooks/useContract";
@@ -57,6 +56,7 @@ const ConfirmTime = ({ selectedDate, time, handleClick }) => {
             amount: price,
             period: time,
             created_at: serverTimestamp(),
+            topic: question
           });
           // Handle success
         } else {
