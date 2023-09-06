@@ -80,10 +80,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contract Links
 
-- ['VerbalToken'](https://goerli.lineascan.build/address/0x13Dc55d50a67C882Cf9930281C91688489642789#code)
-- ['PodcastContract'](https://goerli.lineascan.build/address/0x2413916b5b6d5d13770fba2F05e0BA04411a6691#code)
-- [' Sessions](https://goerli.lineascan.build/address/0xfFDd21F23227c8776fF691635482EF3aFF6D750f#code)
-- ['RewardsContract](https://goerli.lineascan.build/address/0xb00ca2cc9d7d6D4B72C55C356f8B911a9d8a8350#code)
+- ['VerbalToken'](https://opbnbscan.com/address/0x068f32500dd6265726a8d1cb6D4ED9416998C0C7#code)
+- ['PodcastContract'](https://opbnbscan.com/address/0xB80675D4623d20D4C1103455Eb5AfbdE474Ec2C5#code)
+- [' Sessions](https://opbnbscan.com/address/0x9Fca3C2E61b3dDD093FAF29DBE420D04e53Ab4F2#code)
+- ['RewardsContract](https://opbnbscan.com/address/0x6B55f92aF1Bf5445243f702F35DD81C97C6E7744#code)
 
 ---
 

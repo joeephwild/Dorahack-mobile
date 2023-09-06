@@ -14,7 +14,7 @@ import { db } from "../../firebase";
 
 const ConfirmTime = ({ selectedDate, time, handleClick }) => {
   const [mentor, setMentor] = useState("");
-  const [question, setQuestion] = useState();
+  const [question, setQuestion] = useState("");
   const [price, setPrice] = useState();
   const [hashurl, setHashUrl] = useState("");
   console.log(selectedDate);
@@ -46,7 +46,8 @@ const ConfirmTime = ({ selectedDate, time, handleClick }) => {
           mentor,
           handleTime(time),
           meeting,
-          price
+          price,
+          question
         );
         setHashUrl(hash);
         if (hash) {

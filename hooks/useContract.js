@@ -42,7 +42,7 @@ export const connectWithContract = async (contractAddress, contractAbi) => {
   const privateKey =
     ethers.Wallet.fromMnemonic(mnemonic)._signingKey().privateKey;
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
+    "https://opbnb-testnet-rpc.bnbchain.org/"
   );
 
   const wallet = new ethers.Wallet(privateKey, provider);
@@ -76,7 +76,8 @@ export const scheduleASession = async (
   mentorAddress,
   timestamp,
   meetingLink,
-  mentorPrice
+  mentorPrice,
+  topic
 ) => {
   //note that this functionn schedules a session, timestamp:int, mentorPrice: int, meetingLink: string(IPFS HASH), address of the mentor
   try {
@@ -85,15 +86,15 @@ export const scheduleASession = async (
       mentorAddress,
       timestamp,
       meetingLink,
+      mentorPrice,
+      topic,
       {
         value: weiValue(mentorPrice),
         gasLimit: gasLimit,
       }
     );
-    let hashUrl = `https://testnet.arbiscan.io/tx/${session.hash}`;
-    console.log(
-      `Commitment pending: https://testnet.arbiscan.io/tx/${session.hash}`
-    );
+    let hashUrl = `http://opbnbscan.com/tx/${session.hash}`;
+    console.log(`Commitment pending: http://opbnbscan.com/tx/${session.hash}`);
     return hashUrl;
   } catch (error) {
     console.log(error.message);
@@ -152,15 +153,10 @@ export const uploadAPodcast = async (ipfsHash, podcastPrice) => {
     const contract = await connectWithContract(PodcastAddress, PodcastABI);
     const podcast = await contract?.uploadPodcast(
       ipfsHash,
-      weiValue(podcastPrice),
-      {
-        gasLimit: gasLimit,
-      }
+      weiValue(podcastPrice)
     );
-    let hashUrl = `https://testnet.arbiscan.io/tx/${podcast.hash}`;
-    console.log(
-      `Commitment pending: https://testnet.arbiscan.io/tx/${podcast.hash}`
-    );
+    let hashUrl = `http://opbnbscan.com/tx/${podcast.hash}`;
+    console.log(`Commitment pending: http://opbnbscan.com/tx/${podcast.hash}`);
     return hashUrl; //returns true for successful upload
   } catch (error) {
     console.log(error.message);

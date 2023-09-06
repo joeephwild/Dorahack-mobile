@@ -8,7 +8,7 @@ module.exports = {
   solidity: "0.8.19",
   networks: {
     bnb: {
-      url: "https://bsc-testnet.nodereal.io/v1/5f12558fd5694929b15178cc730cfda0",
+      url: "https://opbnb-testnet-rpc.bnbchain.org/",
       accounts: [`0x${PRIVATE_KEY}`],
     },
   }

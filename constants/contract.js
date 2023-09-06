@@ -8,10 +8,10 @@ import rewardsAbi from "./RewardsContract.json";
 // const SessionsAddress = "0xe969cC2488238D2408b6E1d92cece37a33E077CC";
 // const RewardsAddress = "0x73e5a7A236FF9CB73558433b6Da2880630511629";
 
-const VerbalAddress = "0x98962d3F5507980C1468298136d0a9cbC5806Ce7";
-const PodcastAddress = "0xb4d1D06b55fe7FaeA1e6A817C4476B88D6F50FB7";
-const SessionsAddress = "0x2a00F9c59c0afbb29a5140895FF1d05d191Cd2ca";
-const RewardsAddress = "0xe2aF80b0B2CF386E1bf1CdAdf4ff9732f476745A";
+const VerbalAddress = "0x068f32500dd6265726a8d1cb6D4ED9416998C0C7";
+const PodcastAddress = "0xB80675D4623d20D4C1103455Eb5AfbdE474Ec2C5";
+const SessionsAddress = "0x9Fca3C2E61b3dDD093FAF29DBE420D04e53Ab4F2";
+const RewardsAddress = "0x6B55f92aF1Bf5445243f702F35DD81C97C6E7744";
 
 const VerbalABI = verbalAbi.abi;
 const SessionsABI = sessionsAbi.abi;
